@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-family: 'Silkscreen', cursive;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+#container{
+    height: 400px;
+    width: 1200px;
+    position: relative;
+    overflow: hidden;
+}
+#dino{
+    
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    bottom: 28px;
+    left: 20px;
+    /* animation: dinoani 0.8s linear infinite; */
+}
+#dino img{
+    height: 70px;
+    width: 70px;
+   
+}
+.dinoActive{
+    animation: dinoani 0.5s linear infinite;
+}
+
+@keyframes dinoani{
+    0%,100%{
+        bottom: 28px;
+    }
+    45%,55%{
+        bottom: 160px;
+    }
+}
+#block{
+    height: 80px;
+    width: 125px;
+    position: absolute;
+    bottom: 20px;
+    right: -20px;
+    /* animation: blockani 1.2s linear infinite; */
+}
+#block img{
+    height: 80px;
+    width: 125px;
+}
+.blockActive{
+    animation: blockani 1.2s linear infinite;
+}
+@keyframes blockani{
+    0%{
+        right: -125px;
+    }
+    100%{
+        right: 100%;
+    }
+}
+#road{
+    height: 30px;
+    width: 1200px;
+    position: absolute;
+    bottom: 0;
+    /* animation: roadani 1.2s linear infinite; */
+}
+
+#road img{
+    height: 30px;
+    width: 2000px;
+    position: absolute;
+    left: 0;
+}
+@keyframes roadani{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -800px;
+    }
+}
+#cloud{
+    height: 80px;
+    width: 1200px;
+    border-radius: 40px;
+    position: absolute;
+    top: 30px;
+    
+}
+#cloud img{
+    height: 80px;
+    width: 2000px;
+    position: absolute;
+    left: -2000px;
+    /* animation: cloudani 20s linear infinite; */
+}
+@keyframes cloudani{
+    0%{
+        left: -2000px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+#score{
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+#gameover{
+    font-size: 50px;
+    position: absolute;
+    left: calc(50% - 181px);
+    top: calc(50%  - 40px);
+    width: 362px;
+    height: 80px;
+    color: #525252;
+    text-align: center;
+    opacity: 0%;
+}
+#gameover p{
+    font-size: 20px;
+}
+#enter{
+    opacity: 100%;
+}
+
+    
